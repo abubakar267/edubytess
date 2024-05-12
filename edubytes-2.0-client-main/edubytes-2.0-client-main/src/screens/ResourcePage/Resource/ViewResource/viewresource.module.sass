@@ -1,0 +1,105 @@
+.container
+    margin: 0 auto
+    width: 1200px
+
+.container
+    margin-top: 60px
+
+.pdf
+    max-width: 840px
+    display: flex
+    align-items: flex-start
+    gap: 20px
+
+.header img
+    height: 25px
+    width: 25px
+    border-radius: 50%
+
+.header
+    max-width: 400px
+    background-color: white
+    padding: 10px
+    border-radius: 10px
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    border: 1px solid #dee2e6
+    justify-content: space-between
+
+.header div
+    display: flex
+    align-items: center
+    gap: 10px
+
+.container h5
+
+    font-size: 18px
+    font-weight: 400
+
+.container iframe
+    width: 840px
+    height: 840px
+
+.imageviewer button
+    cursor: pointer
+    padding: 4px 8px
+    border-radius: 25px
+    border: none
+    background-color: #339af0
+    color: white
+
+.rating_bar
+    font-size: 24px
+    line-height: 24px
+
+.rating_bar input[type="radio"]
+    display: none
+
+.rating_bar i
+    color: #ccc
+
+.rating_bar i
+    &:active
+        color: #f90
+
+.delete p
+    font-size: 14px
+    color: #868e96
+
+.delete
+    display: flex
+    align-items: center
+    gap: 5px
+    background-color: white
+    width: 75px
+    padding: 2px 5px
+    border-radius: 25px
+    border: 1px solid #dee2e6
+    // margin-bottom: 20px
+    cursor: pointer
+
+@media only screen and (max-width: 1000px)
+
+    .container
+        margin: 0px
+        width: 100%
+    .pdf
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 0px
+        padding: 0px
+        // max-width: 100%
+        margin: 0 auto
+
+    .header
+        margin-top: 60px
+        width: 300px
+
+    .container
+        iframe
+            width: 100vw
+
+    .images
+        padding-left: 20px

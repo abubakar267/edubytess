@@ -1,0 +1,143 @@
+$secondary-gray: #adb5bd
+$border-gray: #e9ecef
+
+*
+    margin: 0
+    padding: 0
+
+.container
+    background-color: white
+    // cursor: pointer
+    border-radius: 16px
+    width: 100%
+    border: 1px solid #dee2e6
+
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.header div
+    &:nth-child(1)
+        display: flex
+        gap: 10px
+
+.header h1
+    font-size: 14px
+    font-weight: 400
+
+.header p
+    font-size: 11px
+    font-weight: 300
+    color: $secondary-gray
+
+.header img
+    height: 35px
+    width: 35px
+    border-radius: 50%
+    cursor: pointer
+
+.content
+    margin-top: 10px
+    cursor: pointer
+
+.content p
+    font-size: 14px
+    margin-top: 10px
+    font-weight: 400
+    color: #343a40
+    line-height: 1.3
+
+.content span
+    font-size: 14px
+    margin-top: 15px
+    color: $secondary-gray
+    cursor: pointer
+    &:hover
+        text-decoration: underline
+
+.image img
+    max-height: 200px
+    border-radius: 16px
+    object-fit: cover
+    width: 100%
+    cursor: pointer
+    border-bottom-left-radius: 0px
+    border-bottom-right-radius: 0px
+
+.likes
+    display: flex
+    align-items: center
+    gap: 10px
+    background-color: #f1f3f5
+    padding: 0px 8px
+    border: 1px solid #dee2e6
+    border-radius: 25px
+    &:hover
+        background-color: #e9ecef
+
+.comment
+    background-color: #f1f3f5
+    // padding: 2px 5px 2px 5spx
+    padding-top: 3px
+    padding-right: 2px
+    padding-left: 1px
+    padding-bottom: 0px
+    border: 1px solid #dee2e6
+
+    border-radius: 50%
+
+// .chip
+//     border: 1px solid #dee2e6
+
+.likes span
+    font-size: 14px
+    color: $secondary-gray
+
+.likes div
+    &:nth-child(1)
+        display: flex
+        align-items: center
+        gap: 2px
+
+.userlikespfp
+    display: flex
+
+.userlikespfp img
+    height: 16px
+    width: 16px
+    border-radius: 50%
+
+.interaction
+    display: flex
+    margin-top: 25px
+    justify-content: space-between
+    // border-top: 1px solid #dee2e6
+
+.interaction p
+    font-size: 14px
+    color: $secondary-gray
+    &:hover
+        text-decoration: underline
+
+.icons
+    display: flex
+    align-items: center
+    gap: 5px
+    color: #868e96
+    border-radius: 8px
+    font-size: 12px
+    // size: 5px
+
+@media only screen and (max-width: 670px)
+    .interaction
+        margin-right: 0px
+        margin-left: 0px
+        // justify-content: center
+        gap: 40px
+
+    .container
+        width: 100%
+
+    .content img
+        width: 100%

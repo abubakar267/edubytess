@@ -1,0 +1,48 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  /* overflow: hidden; */
+  /* font-family: "Roboto", sans-serif; */
+}
+html,
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  /* overflow: hidden; */
+}
+
+html,
+body {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 1410px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  height: 56px;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+  background-color: #888;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

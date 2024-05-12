@@ -1,0 +1,262 @@
+$secondary-gray: #adb5bd
+
+html
+    height: 100%
+    // overflow-y: scroll
+    overflow-x: hidden
+    margin-right: calc(-1 * (100vw - 100%))
+
+body
+    background-color: #F0F2F5
+    height: inherit
+    margin: 0
+
+.left
+
+    position: fixed
+    left: 230px
+
+.right
+    position: fixed
+    left: 1310px
+
+.secondary_post
+    display: flex
+    gap: 10px
+    margin-top: 10px
+
+.carousel
+    background-color: white
+    padding: 10px
+    padding-top: 15px
+    border-radius: 12px
+    border: 1px solid #dee2e6
+    // max-width: 92%
+    // display: none
+
+    margin-top: 10px
+
+.head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 10px
+    font-size: 14px
+
+// .head span
+//     font-size: 12px
+//     color: #adb5bd
+    margin-right: 5px
+    cursor: pointer
+    &:hover
+        text-decoration:
+
+.head span
+    background-color: #339af0
+    border: none
+    border-radius: 25px
+    padding: 5px 8px
+    font-size: 12px
+    color: white
+    cursor: pointer
+.carousel svg
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.1)
+    border-radius: 50%
+    padding: 2px
+
+.container
+    display: flex
+    gap: 20px
+    width: auto
+
+    padding-top: 50px
+    // padding: 10px
+    // padding-left: calc(100vw - 100%)
+    // padding-left: calc(100vw - 100%)
+
+.middle
+    position: relative
+    margin: 0 auto
+    max-width: 680px
+
+.arrow
+    margin-left: 70px
+    cursor: pointer
+
+.postbar
+    margin-top: 20px
+
+.endtext
+    font-size: 12px
+    text-align: center
+    margin-top: 20px
+    text-align: center
+    color: $secondary-gray
+    margin-bottom: 20px
+
+.header
+    display: block
+    // float: right
+    justify-content: end
+    // margin-top: 4px
+    // border: 2px solid #dee2e6
+    background-color: white
+    border-radius: 8px
+    // border-radius: 25px
+    // max-width: 125px
+
+.header button
+    border: none
+    background-color: white
+    padding: 5px 10px
+    cursor: pointer
+    &:hover
+        background-color: #f1f3f5
+
+.header button
+    &:nth-child(1)
+        border-left: 1px solid #e9ecef
+
+    &:nth-child(2)
+        border-right: 1px solid #e9ecef
+        border-left: 1px solid #e9ecef
+    &:nth-child(3)
+        border-top-right-radius: 8px
+        border-bottom-right-radius: 8px
+
+.header h1
+    font-weight: 500
+    font-size: 16px
+
+.filter
+    background-color: white
+    display: flex
+    align-items: center
+    gap: 5px
+    margin-top: 4px
+    justify-content: space-between
+    // padding: 2px
+    border-radius: 8px
+    border: 1px solid #dee2e6
+
+.filter_select
+    display: flex
+    align-items: center
+    // gap: 10px
+    button
+        padding: 10px
+        background-color: white
+        border: none
+        cursor: pointer
+        font-weight: 500
+        color: #868e96
+        border-right: 1px solid #dee2e6
+
+        &:hover
+            background-color: #f1f3f5
+        &:nth-child(1)
+            border-top-left-radius: 8px
+            border-bottom-left-radius: 8px
+
+            // margin-left: 10px
+    // background-color: white
+
+    p
+        font-size: 14px
+        color: #868e96
+    select
+        padding: 7px 5px
+        border-radius: 25px
+        border: 2px solid #dee2e6
+        outline: none
+        cursor: pointer
+
+            // width: 100%
+
+.mobile_filter
+    display: none
+
+.mainposts
+    margin-top: 26px
+    padding: 0px 5px
+
+.post
+    max-width: 680px
+    // padding: 10px
+    background-color: white
+    border-radius: 16px
+    margin-bottom: 15px
+
+@media only screen and (max-width: 1800px)
+    .left
+        left: 180px
+
+    .right
+        left: 1250px
+
+@media only screen and (max-width: 1650px)
+    .left
+        left: 80px
+
+    .right
+        left: 1200px
+
+@media only screen and (max-width: 1500px)
+    .left
+        left: 20px
+
+    .right
+        left: 1100px
+
+@media only screen and (max-width: 1390px)
+    .left
+        display: none
+    .right
+        display: none
+
+@media only screen and (max-width: 670px)
+    .container
+        padding-left: 10px
+        padding-right: 10px
+        display: block
+
+    .carousel
+        width: 500px
+
+    .filter_select
+        button
+            font-size: 10px
+            padding: 10px 5x
+    .mobile_filter
+        display: block
+
+@media only screen and (max-width: 540px)
+    .secondary_post
+        display: block
+
+        // padding: 10px
+        // max-width: 530px
+        main
+
+            &:nth-child(2)
+                display: none
+
+    .secondary_post
+        width: 100%
+
+    .carousel
+        width: 500px
+
+@media only screen and (max-width: 500px)
+    .carousel
+        width: 94%
+
+// @media only screen and (max-width: 450px)
+
+// @media only screen and (max-width: 420px)
+
+// @media only screen and (max-width: 400px)
+
+// @media only screen and (max-width: 360px)
+
+// @media only screen and (max-width: 350px)

@@ -1,0 +1,40 @@
+.container
+    display: flex
+    // position: absolute
+    // width: 1200px
+    // left: 25%
+    gap: 20px
+
+.middle
+    // position: relative
+    width: 750px
+    margin: auto
+
+.right
+    display: flex
+    flex-direction: column
+    gap: 15px
+    margin-top: 60px
+    position: fixed
+    right: 12%
+
+@media only screen and (max-width: 1710px)
+    .right
+        right: 6%
+
+@media only screen and (max-width: 1610px)
+    .right
+        right: 4%
+
+@media only screen and (max-width: 1510px)
+    .right
+        right: 1%
+
+@media only screen and (max-width: 1300px)
+    .right
+        display: none
+    .middle
+        // width: 800px
+        margin: 0 auto
+    .container
+        gap: 0px
